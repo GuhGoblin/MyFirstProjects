@@ -3,7 +3,7 @@
 #include <time.h>
 
 
-int main(){
+  int main(){
 
   int humanAns;
 
@@ -35,7 +35,7 @@ int ai() {
 
   srand(time(NULL)); 
 
-  int aiAns = rand() %3;
+  int aiAns = rand() %3 +1;
 
   printf("Ai's turn\n");
 
@@ -46,6 +46,5 @@ int ai() {
    } else if(aiAns == 3){
     printf("Ai picks Scissors\n");
   }
-  
-return 0;
+  return 0;
 }
