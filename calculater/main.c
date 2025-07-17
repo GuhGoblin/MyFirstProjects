@@ -36,18 +36,18 @@ return 0;
 
 
 int add(){
-  int x;
-  int y;
+  double x;
+  double y;
 
  printf("vaule of 1st number\n");
 
- scanf("%d", &x);
+ scanf("%lf", &x);
 
  printf("value of 2nd number\n");
 
- scanf("%d", &y);
+ scanf("%lf", &y);
 
- printf("%d \n", x + y);
+ printf("%lf\n", x + y);
    
 return 0;
 }
@@ -58,18 +58,18 @@ return 0;
 
 int sub(){
 
-  int x;
-  int y;
+  double x;
+  double y;
 
   printf("Value of 1st number\n");
 
-  scanf("%d", &x);
+  scanf("%lf", &x);
 
   printf("Value of 2nd number\n");
 
-  scanf("%d", &y);
+  scanf("%lf", &y);
 
-  printf("%d\n", x - y);
+  printf("%lf\n", x - y);
 
 
   return 0;
@@ -78,36 +78,36 @@ int sub(){
 
 int mult(){
 
-  int x;
-  int y;
+  double x;
+  double y;
 
   printf("Value of 1st number\n");
 
-  scanf("%d", &x);
+  scanf("%lf", &x);
 
   printf("value of 2nd number\n");
 
-  scanf("%d", &y);
+  scanf("%lf", &y);
 
-  printf("%d\n", x * y);
+  printf("%lf\n", x * y);
 
   return 0;
 }
 
 int div(){
 
-  int x;
-  int y;
+  double x;
+  double y;
 
   printf("Value of 1st number\n");
 
-  scanf("%d", &x);
+  scanf("%lf", &x);
 
   printf("value of 2nd number\n");
 
-  scanf("%d", &y);
+  scanf("%lf", &y);
 
-  printf("%d\n", x / y);
+  printf("%lf\n", x / y);
 
   return 0;
 }
