@@ -2,17 +2,26 @@
 
 int main(){
 
-  char aiAttack;
-  char scissors[10];
-  char paper[5];
-  char rock[5];
+  int humanAns;
 
-  printf("Rock Paper Scissors");
+  printf("Rock Paper Scissors\n");
 
-  printf("Choice your move");
+  printf("Choice your move\n");
 
-  scanf("%C", paper)
+  scanf("%d", &humanAns);
+
+  if (humanAns == 1) {
+    printf("You picked rock");
+  } else if(humanAns == 2) {
+    printf("you picked paper");
+  } else if(humanAns == 3) {
+    printf("You choice Scissors");
+  }
 
   
 
+
+
+  
+  return 0;
 }
