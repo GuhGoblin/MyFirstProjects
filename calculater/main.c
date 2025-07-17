@@ -10,7 +10,7 @@ int main(){
 
   printf("Would you like to add or subtract\n");
 
-  printf("enter - or +");
+  printf("enter - or +\n");
 
   scanf("%c", &op);
     
@@ -53,15 +53,15 @@ int sub(){
   int x;
   int y;
 
-  printf("Value of 1st number");
+  printf("Value of 1st number\n");
 
   scanf("%d", &x);
 
-  printf("Value of 2nd number");
+  printf("Value of 2nd number\n");
 
   scanf("%d", &y);
 
-  printf("%d", x - y);
+  printf("%d\n", x - y);
 
 
   return 0;
