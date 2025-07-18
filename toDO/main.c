@@ -4,6 +4,8 @@ int main(){
 
   int choice;
 
+  
+
   printf("Welocme to the todo app, what would you like to do\n");
 
   printf("1: Add task\n");
@@ -15,4 +17,23 @@ int main(){
   printf("4: Exit\n");
 
   scanf("%d\n", &choice);
+
+  void addFunc();
+
+  if (choice == 1) {
+    addFunc();
+  }
+
+  return 0;
+}
+
+
+ void addFunc(){
+
+  char Task[100];
+
+  printf("Enter Task\n");
+
+  scanf("%s\n", &Task[100]);
+  
 }
