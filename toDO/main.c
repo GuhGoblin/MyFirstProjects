@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+char task;
+
 int main(){
 
   int choice;
@@ -16,24 +18,38 @@ int main(){
 
   printf("4: Exit\n");
 
-  scanf("%d\n", &choice);
+  scanf("%d", &choice);
 
-  void addFunc();
+  int addFunc();
+  int listFunc();
 
+  while (choice <= 4){
+    break;
+  } 
   if (choice == 1) {
     addFunc();
+  } else if(choice == 2) {
+    listFunc();
   }
 
   return 0;
 }
 
 
- void addFunc(){
-
-  char Task[100];
+ int addFunc(){
 
   printf("Enter Task\n");
 
-  scanf("%s\n", &Task[100]);
-  
+  scanf("%s\n", &task);
+
+  return main();
+}
+
+int listFunc(){
+
+  printf("Here is your task's\n");
+
+  printf("%s", &task);
+
+  return main();
 }
