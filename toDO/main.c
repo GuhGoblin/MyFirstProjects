@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-char task;
+char task[100][100];
 
 int main(){
 
@@ -23,7 +23,7 @@ int main(){
   int addFunc();
   int listFunc();
 
-  while (choice <= 4){
+  while (choice > 4){
     break;
   } 
   if (choice == 1) {
@@ -40,7 +40,7 @@ int main(){
 
   printf("Enter Task\n");
 
-  scanf("%s\n", &task);
+  scanf("%s\n", &task[100][100]);
 
   return main();
 }
@@ -49,7 +49,7 @@ int listFunc(){
 
   printf("Here is your task's\n");
 
-  printf("%s", &task);
+  printf("%s\n", &task[100][100]);
 
   return main();
 }
