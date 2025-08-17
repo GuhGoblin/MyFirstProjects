@@ -4,4 +4,6 @@ these are also written from scrath with little help. I am very proud for I stare
 
 also quick note to use the code you might need to recompile it. I would use GCC if you do
 
+my calculater is crap btw. 
+
 https://gcc.gnu.org/
