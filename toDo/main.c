@@ -37,13 +37,23 @@ int main() {
       fgets(task[task_count], MAX_LENGTH, stdin);
       task[task_count][strcspn(task[task_count], "\n")] = 0;
       printf("task added: %s\n", task[task_count]);
-      task_count++;
+      task_count++; 
       break;
      
     }
-    case 2:
-      
+    case 2: {
+      if (task_count == 0){
+	printf("You have no tasks\n");
+      } else {
+	printf("Your tasks\n");
+	for (int i = 0; i < task_count; i++) {
+	  printf("%d. %s\n", i + 1, task[i]);
+	}
+      } 
+    }
+      break;
     }
   
   }
+  return 0;
 }
